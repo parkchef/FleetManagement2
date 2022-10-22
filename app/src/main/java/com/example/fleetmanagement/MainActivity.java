@@ -152,12 +152,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, TextRecognitionActivity.class);
             startActivity(intent);
         }
-
-        @JavascriptInterface
-        public void licenseScanner(int memberId) {
-            Intent intent = new Intent(MainActivity.this, TextRecognitionActivity.class);
-            startActivity(intent);
-        }
     }
 
     // 뒤로가기 구현
