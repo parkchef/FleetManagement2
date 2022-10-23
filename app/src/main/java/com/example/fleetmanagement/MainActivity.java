@@ -138,6 +138,8 @@ public class MainActivity extends AppCompatActivity {
         context = getApplicationContext();
         // 사용자의 웹뷰에 띄울 웹페이지 주소
         mWebView.addJavascriptInterface(new WebAppInterface(), "FleetManagement");
+        mWebView.clearCache(true);
+        mWebView.clearHistory();
         if (scannerStatus == -1) {
             mWebView.loadUrl("http://charles3979.ddns.net:8080/capstone-project/dashboard.php");
         }
